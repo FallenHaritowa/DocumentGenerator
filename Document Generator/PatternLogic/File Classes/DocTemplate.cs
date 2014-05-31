@@ -8,6 +8,6 @@ namespace PatternLogic
 {
     public class DocConfig
     {
-        public List<Entity> EnabledEntities; 
+        //public List<Entity> EnabledEntities; 
     }
 }

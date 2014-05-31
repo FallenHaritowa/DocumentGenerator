@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace EntityLogic
 {
     [Serializable]
-    internal class Item
+    public class Item
     {
         public Case WordCase;
         public String Value;

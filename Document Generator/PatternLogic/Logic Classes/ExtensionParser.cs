@@ -8,6 +8,6 @@ namespace PatternLogic.Logic_Classes
 {
     public class ExtensionParser
     {
-        public 
+        //public 
     }
 }

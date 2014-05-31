@@ -8,10 +8,10 @@ namespace PatternLogic
 {
     public static class Constants
     {
-        public Dictionary<String, Type> ExentsiontSeparators;
-        public Constants()
-        {
-        }
+        //public Dictionary<String, Type> ExentsiontSeparators;
+        //public Constants()
+        //{
+        //}
     }
     
 }
