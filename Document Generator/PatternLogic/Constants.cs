@@ -8,10 +8,11 @@ namespace PatternLogic
 {
     public static class Constants
     {
-        public Dictionary<String, Type> ExentsiontSeparators;
+        public static List<String> ExtensionsPatterns;
         public Constants()
         {
+            ExtensionsPatterns = new List<string>();
+            ExtensionsPatterns.Add("{{=*?=}}");
         }
     }
-    
 }
