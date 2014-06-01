@@ -13,3 +13,9 @@ D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\
 D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.csproj.GenerateResource.Cache
 D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.exe
 D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.pdb
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\TemplateCreatingWindow.baml
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\TemplateCreatingWindow.g.cs
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\PatternCreatingWindow.baml
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\PatternCreatingWindow.g.cs
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\TestWindow.baml
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\TestWindow.g.cs

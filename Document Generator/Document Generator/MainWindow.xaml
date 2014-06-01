@@ -3,6 +3,69 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TabControl Grid.Column="0" Grid.Row="0">
+            <TabItem Header="Документ">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Выбеите шаблон и данные для генерации документа." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0"/>
+                    <Button Name="CreateTemplateButton" Content="Добавить шаблон" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="0"/>
+                    <Label Content="Шаблон документа:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="1"/>
+                    <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="306" Margin="10,10,0,0" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+                    <Label Content="Данные для заполнения" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="3"/>
+                    <DataGrid HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top" MinHeight="90" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Название" Width="1*"></DataGridTextColumn>
+                            <DataGridComboBoxColumn Width="1*"></DataGridComboBoxColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Выполнить" HorizontalAlignment="Left" Margin="10,10,0,10" VerticalAlignment="Top" Grid.Column="0" Grid.Row="5"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Шаблон данных">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Мои шаблоны данных" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="0" Grid.Row="0"/>
+                    <DataGrid HorizontalAlignment="Left" Margin="10,10,10,0" VerticalAlignment="Top" MinHeight="190" Grid.Column="0" Grid.Row="1">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Название" Width="6*"></DataGridTextColumn>
+                            <DataGridHyperlinkColumn Width="2*"></DataGridHyperlinkColumn>
+                            <DataGridHyperlinkColumn Width="2*"></DataGridHyperlinkColumn>
+                            <DataGridTemplateColumn></DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Name="CreatePatternButton" Content="Создать шаблон данных" HorizontalAlignment="Left" Margin="10,10,0,10" VerticalAlignment="Top" Grid.Column="0" Grid.Row="2" Click="CreatePatternButton_Click"/>
+                    
+                    
+                </Grid>
+            </TabItem>
+            <TabItem Header="Значения полей">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

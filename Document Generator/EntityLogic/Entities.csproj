@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Basic.cs" />
     <Compile Include="Cases.cs" />
+    <Compile Include="DocumentTemplate.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="EntityPattern.cs" />
     <Compile Include="Field.cs" />

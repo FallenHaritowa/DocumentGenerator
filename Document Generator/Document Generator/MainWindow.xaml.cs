@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace Document_Generator
 {
@@ -24,5 +25,21 @@ namespace Document_Generator
         {
             InitializeComponent();
         }
+
+        private void CreatePatternButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        //private void FileSelectButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    OpenFileDialog dialog = new OpenFileDialog();
+        //    dialog.DefaultExt = ".docx";
+        //    dialog.Filter = "Word documents| *.docx;*.doc";
+        //    if (dialog.ShowDialog() == true)
+        //    {
+        //        FileNameTextBox.Text = dialog.FileName;
+        //    }
+        //}
     }
 }
