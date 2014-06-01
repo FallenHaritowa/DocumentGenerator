@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProcessLogic
+namespace ProcessService
 {
     public static class Constants
     {
-        public static List<String> ExtensionsPatterns;
+        public static Dictionary<String, String> DocumentExtensions;
         public Constants()
         {
-            ExtensionsPatterns = new List<string>();
-            ExtensionsPatterns.Add("{{=*?=}}");
+            DocumentExtensions = new Dictionary<String, String>();
+            DocumentExtensions.Add("Word", "docx");
         }
     }
 }

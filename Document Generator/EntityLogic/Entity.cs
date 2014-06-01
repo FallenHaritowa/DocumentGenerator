@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatternLogic
+namespace Entities
 {
-    public class DocConfig
+    [Serializable]
+    public class Entity : Basic
     {
-        public List<Entity> EnabledEntities;
+        public IList<Field> Fields;
     }
 }

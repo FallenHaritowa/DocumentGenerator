@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
-using PatternLogic.Template_Extensions;
+using ProcessLogic.Template_Extensions;
 
-namespace PatternLogic.Logic_Classes
+namespace ProcessLogic.Logic_Classes
 {
-    public static class ExtensionParser
+    internal  class ExtensionParser
     {
         public List<Extension> GetExtensions(Template template)
         {
@@ -24,6 +24,7 @@ namespace PatternLogic.Logic_Classes
                     result.Add(extension);
                 }
             }
+            result.Sort((s1, s2) => s2.Index.CompareTo(s1.Index));
             return result;
         }
     }

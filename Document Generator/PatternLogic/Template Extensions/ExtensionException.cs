@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PatternLogic.Template_Extensions
+namespace ProcessLogic.Template_Extensions
 {
     class ExtensionException:Exception
     {
@@ -17,6 +17,12 @@ namespace PatternLogic.Template_Extensions
             {
                 return String.Format("Error with extention {0} field {1}: It can be because there wrong pattern or that field is dont exist");
             }
+        }
+
+        public ExtensionException (String extention,String field)
+        {
+            this.field=field;
+            this.extention=field;
         }
     }
 }

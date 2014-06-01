@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PatternLogic.Template_Extensions;
+using ProcessLogic.Template_Extensions;
 
-namespace PatternLogic.Logic_Classes
+namespace ProcessLogic.Logic_Classes
 {
-    public static class ExtensionResolver
+    internal static class ExtensionResolver
     {
         public  static Extension ResolveExtension(String ExtensionPattern)
         {
@@ -15,7 +15,11 @@ namespace PatternLogic.Logic_Classes
             {
                 case "{{=*?=}}":
                     {
-                        return new FieldExtension() { Index = 1 };       
+                        return new FieldExtension() { Index = 2 };       
+                    }
+                case "{{^*?^}}":
+                    {
+                        return new ShuffleExtension () {Index = 1 };
                     }
                 default: return null;
             }

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entities;
 
-namespace PatternLogic.Template_Extensions
+namespace ProcessLogic.Template_Extensions
 {
     abstract class Extension
     {
