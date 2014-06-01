@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLogic
+namespace Entities
 {
     [Serializable]
     public class EntityPattern : Basic
