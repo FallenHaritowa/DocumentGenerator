@@ -9,24 +9,15 @@ using EntityLogic;
 
 namespace FileService
 {
-    public class EntityPatternService
+    public class EntityPatternService : BasicService<EntityPattern>
     {
-        private const String directoryPath = "Entity Patterns";
 
         public EntityPatternService()
         {
+            directoryPath = "Entity Patterns";
             if (!Directory.Exists(directoryPath))
             {
                 Directory.CreateDirectory(directoryPath);
-            }
-        }
-
-        public void Save(EntityPattern entitypattern)
-        {
-            var serializer = new XmlSerializer(typeof(EntityPattern));
-            using (var fs = new FileStream(Path.Combine(directoryPath, entitypattern.Name), FileMode.Open))
-            {
-                serializer.Serialize(fs, entitypattern);
             }
         }
     }

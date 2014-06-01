@@ -9,7 +9,12 @@ namespace Entities
     [Serializable]
     public class Field : Basic
     {
-        private List<Item> Values;
+        public List<Item> Values;
+
+        public Field()
+        {
+            Values = new List<Item>();
+        }
 
         public Field(String name, String firstValue)
         {
@@ -19,12 +24,19 @@ namespace Entities
 
         public String GetValue()
         {
-            return Values[0].Value?? String.Empty;
-
+            if (Values.Any())
+            {
+                return Values[0].Value ?? String.Empty;
+            }
+            return String.Empty;;
         }
 
         public String GetValue(Case c)
         {
+            if (!Values.Any())
+            {
+                return String.Empty;;
+            }
             Item element = Values.Find(item => item.WordCase == c);
             if (element != null && element.Value != null)
             {

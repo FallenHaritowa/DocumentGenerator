@@ -1,3 +1,15 @@
 D:\Document Generator\DocumentGenerator\Document Generator\Document Generator\bin\Debug\Document Generator.exe.config
 E:\DocumentGenerator\Document Generator\Document Generator\bin\Debug\Document Generator.exe.config
 D:\Учеба\DocumentGenerator\Document Generator\Document Generator\bin\Debug\Document Generator.exe.config
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\bin\Debug\Document Generator.exe
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\bin\Debug\Document Generator.pdb
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.csprojResolveAssemblyReference.cache
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\MainWindow.baml
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\MainWindow.g.cs
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\App.g.cs
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator_MarkupCompile.cache
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.g.resources
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document_Generator.Properties.Resources.resources
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.csproj.GenerateResource.Cache
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.exe
+D:\Учеба\DocumentGenerator\Document Generator\Document Generator\obj\Debug\Document Generator.pdb

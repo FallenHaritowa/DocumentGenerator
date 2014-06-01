@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityLogic
 {
+    [Serializable]
     public abstract class Basic
     {
         public String Name;

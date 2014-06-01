@@ -9,6 +9,7 @@ namespace Entities
     [Serializable]
     public class Entity : Basic
     {
-        public IList<Field> Fields;
+        public String PatternName;
+        public List<Field> Fields;
     }
 }
